@@ -18,10 +18,17 @@ function btn(r,c){
         document.getElementById("btn"+r+c).innerHTML = "O";
     }else{
         isO = true;
-        document.getElementById("btn"+r+c).innerHTML = "O";
+        document.getElementById("btn"+r+c).innerHTML = "X";
     }
 }
-        
+
+function clear(){
+    for(var r = 0; r < 3; r ++){
+        for(var c = 0; c < 3; c ++){
+            document.getElementById("btn"+r+c).innerHTML = "";
+        }
+    }
+}
 
 
 // for (var i = 0; i < m; i++) {
