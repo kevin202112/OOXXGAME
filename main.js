@@ -10,14 +10,17 @@ function btn(r,c){
     }
 }
 
-function clear(){
+function clearAll(){
+    // console.log('kevin');
+    // alert("kevin");
     for(var r = 0; r < 3; r ++){
         for(var c = 0; c < 3; c ++){
-            console.log("r" + r + c);
+            
             document.getElementById("btn"+r+c).innerHTML = "click";
         }
     }
 }
+
 
 // let btnAry = new Array(3);
 
