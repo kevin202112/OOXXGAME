@@ -24,42 +24,6 @@
             <td><button onclick="btn(2,0)" id="btn20"></button></td><td><button onclick="btn(2,1)" id="btn21"></button></td><td><button onclick="btn(2,2)" id="btn22"></button></td>
         </tr>
     </table>
-    <script>
-        let btnAry = new Array(3);
-
-        for (var i = 0; i < m; i++) {
-            btnAry[i] = new Array(3);
-        }
-
-        for(var r = 0; r < 3; r ++){
-            for(var c = 0; c < 3; c ++){
-                btnAry[r][c] = document.getElementById("btn" + r + c);
-            }
-        }
-       
-       function
-        
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
-
- <!-- for (var i = 0; i < m; i++) {
-            btnAry[i] = new Array(3);
-        }
-
-        for(var r = 0; r < 3; r ++){
-            for(var c = 0; c < 3; c ++){
-                btnAry[r][c] = document.getElementById("btn" + r + c);
-            }
-        }
-
-        for(var r = 0; r < 3; r ++){
-            for(var c = 0; c < 3; c ++){
-                function btn() {
-                    document.getElementById("btn00").innerHTML = "Hello World";
-                }
-            }
-        }
-        <!-- function btn00() {
-            document.getElementById("btn00").innerHTML = "Hello World";
-        }  --> -->
