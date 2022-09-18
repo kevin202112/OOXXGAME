@@ -1,5 +1,5 @@
 // let btnAry = new Array(3);
-let isO = true;
+var isO = true;
 
 // for (var i = 0; i < m; i++) {
 //     btnAry[i] = new Array(3);
