@@ -1,23 +1,24 @@
-let btnAry = new Array(3);
+// let btnAry = new Array(3);
 let isO = true;
 
-for (var i = 0; i < m; i++) {
-    btnAry[i] = new Array(3);
-}
+// for (var i = 0; i < m; i++) {
+//     btnAry[i] = new Array(3);
+// }
 
-for(var r = 0; r < 3; r ++){
-    for(var c = 0; c < 3; c ++){
-        btnAry[r][c] = document.getElementById("btn" + r + c);
-    }
-}
+// for(var r = 0; r < 3; r ++){
+//     for(var c = 0; c < 3; c ++){
+//         btnAry[r][c] = document.getElementById("btn" + r + c);
+//     }
+// }
 
 function btn(r,c){
     if(isO){
         isO = false;
-        btnAry[r][c].innerHTML = "O";
+        // btnAry[r][c].innerHTML = "O";
+        document.getElementById("btn"+r+c).innerHTML = "O";
     }else{
         isO = true;
-        btnAry[r][c].innerHTML = "X";
+        document.getElementById("btn"+r+c).innerHTML = "O";
     }
 }
         
