@@ -15,12 +15,13 @@
 <body>
     <table class="box">
         <tr>
-            <td><button onclick="btn00()" id="btn11"></button></td><td><button onclick="btn12()" id="btn12"></button></td><td><button onclick="btn13()" id="btn13"></button></td>
+            <td><button onclick="btn(0,0)" id="btn00"></button></td><td><button onclick="btn(0,1)" id="btn01"></button></td><td><button onclick="btn(0,2)" id="btn02"></button></td>
         </tr>
         <tr>
-            <td><button onclick="btn21()" id="btn21"></button></td><td><button onclick="btn22()" id="btn22"></button></td><td><button onclick="btn23()" id="btn23"></button></td>
-        </tr><tr>
-            <td><button onclick="btn31()" id="btn31"></button></td><td><button onclick="btn32()" id="btn32"></button></td><td><button onclick="btn33()" id="btn33"></button></td>
+            <td><button onclick="btn(1,0)" id="btn10"></button></td><td><button onclick="btn(1,1)" id="btn11"></button></td><td><button onclick="btn(1,2)" id="btn12"></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="btn(2,0)" id="btn20"></button></td><td><button onclick="btn(2,1)" id="btn21"></button></td><td><button onclick="btn(2,2)" id="btn22"></button></td>
         </tr>
     </table>
     <script>
@@ -32,16 +33,33 @@
 
         for(var r = 0; r < 3; r ++){
             for(var c = 0; c < 3; c ++){
-                btnAry[r][c] = document.getElementById("btn");
+                btnAry[r][c] = document.getElementById("btn" + r + c);
             }
         }
-        btn11 = document.getElementById("demo");
-
-        function myFunction() {
-            document.getElementById("demo").innerHTML = "Hello World";
-        }
+       
+       function
         
     </script>
 </body>
 </html>
 
+ <!-- for (var i = 0; i < m; i++) {
+            btnAry[i] = new Array(3);
+        }
+
+        for(var r = 0; r < 3; r ++){
+            for(var c = 0; c < 3; c ++){
+                btnAry[r][c] = document.getElementById("btn" + r + c);
+            }
+        }
+
+        for(var r = 0; r < 3; r ++){
+            for(var c = 0; c < 3; c ++){
+                function btn() {
+                    document.getElementById("btn00").innerHTML = "Hello World";
+                }
+            }
+        }
+        <!-- function btn00() {
+            document.getElementById("btn00").innerHTML = "Hello World";
+        }  --> -->
