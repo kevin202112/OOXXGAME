@@ -1,20 +1,8 @@
-// let btnAry = new Array(3);
 var isO = true;
-
-// for (var i = 0; i < m; i++) {
-//     btnAry[i] = new Array(3);
-// }
-
-// for(var r = 0; r < 3; r ++){
-//     for(var c = 0; c < 3; c ++){
-//         btnAry[r][c] = document.getElementById("btn" + r + c);
-//     }
-// }
 
 function btn(r,c){
     if(isO){
         isO = false;
-        // btnAry[r][c].innerHTML = "O";
         document.getElementById("btn"+r+c).innerHTML = "O";
     }else{
         isO = true;
@@ -25,11 +13,23 @@ function btn(r,c){
 function clear(){
     for(var r = 0; r < 3; r ++){
         for(var c = 0; c < 3; c ++){
-            document.getElementById("btn"+r+c).innerHTML = "click me";
+            console.log("r" + r + c);
+            document.getElementById("btn"+r+c).innerHTML = "click";
         }
     }
 }
 
+// let btnAry = new Array(3);
+
+// for (var i = 0; i < m; i++) {
+//     btnAry[i] = new Array(3);
+// }
+
+// for(var r = 0; r < 3; r ++){
+//     for(var c = 0; c < 3; c ++){
+//         btnAry[r][c] = document.getElementById("btn" + r + c);
+//     }
+// }
 
 // for (var i = 0; i < m; i++) {
 //     btnAry[i] = new Array(3);
